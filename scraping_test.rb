@@ -12,11 +12,10 @@ end
 
 student_index.search("h3 a").each_with_index do |student, i|
   profile_page = Nokogiri::HTML(open(ALL_OF_OUR_DATA[i][student.text][:profile_page]))
-  puts "I'm scraping #{student.text}'s profile page!"
-  favorite_quote = profile_page.search("div.textwidget h3").text
-  links_array = profile_page.search("div.social-icons a")
 
-  social_links = links_array.collect do |link|
+  favorite_quote = profile_page.search("div.textwidget h3").text
+  
+  social_links = profile_page.search("div.social-icons a").collect do |link|
     link["href"]
   end
 
@@ -38,3 +37,5 @@ student_index.search("h3 a").each_with_index do |student, i|
     :linkedin => linkedin
   })
 end
+
+binding.pry
