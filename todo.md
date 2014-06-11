@@ -39,7 +39,7 @@ class DataGetter
     {
       "Student Name" => {
         :profile_page => ruby005.students.flatironschool.com/studentname.html,
-        :tagline => "i'm at table awesome", # tagline from profile page
+        :favorite_quote => "i'm at table awesome", # tagline from profile page
         :links => { # iterate through links that are on profile page
           :github => www.github.com,
           :twitter => twitter.com,
