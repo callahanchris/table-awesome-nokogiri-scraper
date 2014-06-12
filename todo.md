@@ -36,16 +36,18 @@ end
 
 class DataGetter
   ALL_OF_OUR_DATA = [
-    "Student Name" => {
-      :profile_page => ruby005.students.flatironschool.com/studentname.html,
-      :tagline => "i'm at table awesome", # tagline from profile page
-      :links => { # iterate through links that are on profile page
-        :github => www.github.com,
-        :twitter => twitter.com,
-        :blog => www.blog.com,
-        :linkedin => www.linkedin.com
-      },
-      :favorite_cities => ["NYC", "BK"]
+    {
+      "Student Name" => {
+        :profile_page => ruby005.students.flatironschool.com/studentname.html,
+        :favorite_quote => "i'm at table awesome", # tagline from profile page
+        :links => { # iterate through links that are on profile page
+          :github => www.github.com,
+          :twitter => twitter.com,
+          :blog => www.blog.com,
+          :linkedin => www.linkedin.com
+        },
+        :favorite_cities => ["NYC", "BK"]
+      }
     }
   ]
 end
